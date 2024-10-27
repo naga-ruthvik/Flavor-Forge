@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Flavor Forge</title>
+    <meta name="description" content="A brief description" />
+    <meta
+      name="author"
+      content="Flavor Forge is a contemporary American eatery that celebrates the art of cooking through a unique fusion of traditional and innovative culinary techniques."
+    />
+
+    <!-- Load favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="{% static 'img/logo_footer.png' %}"
+    />
+
+    <!-- Include your CSS files here -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v={{ timestamp }}">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Header content-->
+    {% include 'partials/_header.html' %}
+
+    <main>{% block content %} {% endblock %}</main>
+
+    <!--Footer content-->
+    {% include 'partials/_footer.html' %}
+    <!-- Replace this comment with your code  -->
+  </body>
+</html>

@@ -1,0 +1,54 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section>
+  <article>
+    <h1>About Us</h1>
+    <!--Begin row-->
+    <div class="row">
+      <!--Begin col-->
+      <div class="column">
+        <p>
+         <a href="{% url 'home' %}">Flavor Forge</a> is a contemporary American eatery that celebrates the art of cooking through a unique fusion of traditional and innovative culinary techniques. The restaurant emphasizes the craftsmanship behind each dish, sourcing high-quality, locally produced ingredients to create bold, unforgettable flavors. The concept revolves around the idea of “forging” flavors together, combining various culinary traditions to craft exceptional dishes.
+        </p>
+        <p>
+          Flavor Forge specializes in American cuisine with influences from Southern, Southwestern, and Mediterranean culinary traditions. The focus is on bold flavors, locally sourced ingredients, and innovative cooking techniques that celebrate the diverse palette of American cooking.
+        </p>
+
+        <p>
+          Flavor Forge has a warm, inviting ambiance with industrial-chic decor featuring exposed brick walls, wooden beams, and an open kitchen that allows diners to see the cooking process. The layout encourages communal dining, fostering a sense of community among guests.
+        </p>
+
+        <p>
+          Flavor Forge is owned by a trio of culinary enthusiasts: Chef Marco, a graduate of the Culinary Institute of America with years of experience in fine dining; Sarah, a food entrepreneur passionate about farm-to-table practices; and James, a marketing guru who brings the restaurant's story to life through engaging community outreach.
+        </p>
+
+        <!-- <p>
+          To craft the menu, Mario relies on family recipes and his experience
+          as a chef in Italy.
+        </p>
+
+        <p>
+          Adrian does all the marketing for the restaurant and led the effort to
+          expand the menu beyond classic Italian to incorporate additional
+          cuisines from the mediterranean region.
+        </p> -->
+      </div>
+      <!--End col-->
+
+      <!--Begin col-->
+      <div class="column">
+        <figure class="figure">
+          <img
+            src="{% static 'img/mario-and-adrian.jpg' %}"
+            alt="Mario and Adrian"
+          />
+          <figcaption class="figure-caption">
+            Flavor Forge Owners.
+          </figcaption>
+        </figure>
+      </div>
+      <!--End col-->
+    </div>
+    <!--End row-->
+  </article>
+</section>
+{% endblock %}
